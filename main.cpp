@@ -16,7 +16,6 @@ int main() {
 
   sample *ptr;
   ptr = &param;
-
   param = fooPtr(ptr);
 
   cout << param.a << " " << param.b << "\n";
@@ -29,17 +28,13 @@ int main() {
 }
 
 sample fooPtr(sample *p){
-
   p->a = 11;
   p->b = 22;
-
   return *p;
 }
 
 sample &fooRef(sample &r){
-
   r.a = 111;
   r.b = 222;
-
   return r;
 }
